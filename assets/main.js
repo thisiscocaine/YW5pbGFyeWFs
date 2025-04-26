@@ -123,7 +123,7 @@ const galleryItems = [
     },
     {
         type: 'video',
-        src: 'video/17485931-hd_1920_1080_50fps.mp4',
+        src: 'video/13246929_360_640_30fps.mp4',
         title: '',
         description: ''
     },
