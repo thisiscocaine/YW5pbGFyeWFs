@@ -1,34 +1,3 @@
-// Create twinkling stars background
-function createStars() {
-    const twinklingBg = document.getElementById('twinklingBg');
-    const colors = ['var(--primary)', 'var(--red)', 'var(--yellow)'];
-    
-    for (let i = 0; i < 100; i++) {
-        const star = document.createElement('div');
-        star.className = 'star';
-        
-        // Random properties
-        const size = Math.random() * 3 + 1;
-        const x = Math.random() * 100;
-        const y = Math.random() * 100;
-        const duration = Math.random() * 5 + 3 + 's';
-        const color = colors[Math.floor(Math.random() * colors.length)];
-        const delay = Math.random() * 5 + 's';
-        
-        // Apply styles
-        star.style.width = `${size}px`;
-        star.style.height = `${size}px`;
-        star.style.left = `${x}%`;
-        star.style.top = `${y}%`;
-        star.style.animationDuration = duration;
-        star.style.animationDelay = delay;
-        star.style.backgroundColor = color;
-        star.style.setProperty('--duration', duration);
-        
-        twinklingBg.appendChild(star);
-    }
-}
-
 // Set hero background (image or video)
 function setHeroBackground() {
     const heroBg = document.querySelector('.hero-bg');
@@ -371,6 +340,5 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
-    createStars();
     setHeroBackground();
 });
